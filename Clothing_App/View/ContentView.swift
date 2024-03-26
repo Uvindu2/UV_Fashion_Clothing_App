@@ -10,7 +10,7 @@
 //struct ContentView: View {
 //    @StateObject var cartManager=CartManager()
 //    var columns=[GridItem(.adaptive(minimum: 160, maximum: 20))]
-//    
+//
 //    var body: some View {
 //        NavigationView{
 //            ScrollView{
@@ -53,7 +53,8 @@ struct ContentView: View {
         Category(name: "Kids", systemImageName: "person.3"),
         Category(name: "Office", systemImageName: "bag")
     ]
-    
+         @State private var selectedCategory: Category? = nil
+         @State private var filteredProducts: [Product] = []
     var body: some View {
         VStack(alignment:.leading){
             Text("UV Fashion")
@@ -65,18 +66,19 @@ struct ContentView: View {
                 HStack(spacing: 20) {
                     ForEach(categories, id: \.self) { category in
                         Button(action: {
-                            // Handle button tap
-                            // Navigate to the corresponding view
+                            selectedCategory = category
+                            filteredProducts = productList.filter { $0.category == category.name }
+                            print(filteredProducts)
                         }) {
                             VStack {
                                 Image(systemName: category.systemImageName)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 35, height: 35)
+                                    .frame(width: 30, height: 30)
                                 
                                 Text(category.name)
                                     .font(.headline)
-                                    .foregroundColor(.primary)
+                                    .foregroundColor(.black)
                             }
                             .frame(width: 80, height: 80)
                             .background(Color.secondary.opacity(0.1))
@@ -84,9 +86,8 @@ struct ContentView: View {
                         }
                     }
                 }
-                .padding()
             }
-            .navigationBarTitle("Categories")
+
             
             NavigationView {
                 ScrollView {
@@ -96,7 +97,7 @@ struct ContentView: View {
                                 .environmentObject(cartManager)
                         }
                     }
-                    .padding()
+                 
                 }
                
                 .toolbar {

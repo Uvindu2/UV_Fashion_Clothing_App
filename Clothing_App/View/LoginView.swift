@@ -13,11 +13,6 @@ struct LoginView: View {
     var body: some View {
   
         ZStack {
-        
-            // Background color
-            Color(red: 248/255, green: 248/255, blue: 248/255) // Light grey or any color relevant to your app
-                .edgesIgnoringSafeArea(.all)
-            
             VStack(alignment: .leading,spacing:10) { // Aligning all content to leading (left-aligned)
                 Spacer()
                 
@@ -77,11 +72,7 @@ struct LoginView: View {
                 }
                 .padding(.bottom, 40)
                 .foregroundColor(.white)
-                NavigationLink(destination: ContentView(), tag: true, selection: $loggedIn) {
-                        EmptyView() // Use an EmptyView as the label
-                    }
-                    .navigationBarTitle("") // Hide the back button text
-                    .navigationBarHidden(true) // Hide the navigation bar
+
                 VStack(spacing: 20) {
                      // Other login components (e.g., username, password fields, etc.)
 
