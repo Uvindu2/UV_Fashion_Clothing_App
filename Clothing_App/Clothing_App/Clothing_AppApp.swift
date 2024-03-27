@@ -10,12 +10,11 @@ import SwiftUI
 
 @main
 struct YourApp: App {
-    @StateObject var viewModel = ProductViewModel()
+    @StateObject var viewModel = LoginViewModel2() // Initialize LoginViewModel
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(viewModel)
+            LoginView(viewModel: viewModel) // Inject LoginViewModel into LoginView
         }
     }
 }

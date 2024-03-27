@@ -20,7 +20,6 @@
 		50791A5E2BB1899900EFB351 /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A5D2BB1899900EFB351 /* CategoryButtonView.swift */; };
 		50791A602BB19CF500EFB351 /* FilteredProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A5F2BB19CF500EFB351 /* FilteredProductsView.swift */; };
 		50791A622BB19D6C00EFB351 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A612BB19D6C00EFB351 /* ProductListViewModel.swift */; };
-		50791A642BB1A0B300EFB351 /* NewLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A632BB1A0B300EFB351 /* NewLoginView.swift */; };
 		517411062BAD860C00F78991 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517411052BAD860C00F78991 /* LoginViewModel.swift */; };
 		5174110C2BAD86C600F78991 /* ClothingEcomHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5174110B2BAD86C600F78991 /* ClothingEcomHomeView.swift */; };
 		517411102BAD86FA00F78991 /* ClothingEcomDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5174110F2BAD86FA00F78991 /* ClothingEcomDataModel.swift */; };
@@ -36,6 +35,10 @@
 		51E67EEA2BA5BDB40083D487 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E67EE92BA5BDB40083D487 /* ContentView.swift */; };
 		51E67EEC2BA5BDB50083D487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E67EEB2BA5BDB50083D487 /* Assets.xcassets */; };
 		51E67EEF2BA5BDB50083D487 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E67EEE2BA5BDB50083D487 /* Preview Assets.xcassets */; };
+		A565D27B2BB447F20000C82E /* CategoryProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D27A2BB447F20000C82E /* CategoryProductView.swift */; };
+		A565D27D2BB4533E0000C82E /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D27C2BB4533E0000C82E /* NewLogin.swift */; };
+		A565D27F2BB464210000C82E /* User2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D27E2BB464210000C82E /* User2.swift */; };
+		A565D2812BB464950000C82E /* LoginViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D2802BB464950000C82E /* LoginViewModel2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +55,6 @@
 		50791A5D2BB1899900EFB351 /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
 		50791A5F2BB19CF500EFB351 /* FilteredProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredProductsView.swift; sourceTree = "<group>"; };
 		50791A612BB19D6C00EFB351 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
-		50791A632BB1A0B300EFB351 /* NewLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginView.swift; sourceTree = "<group>"; };
 		517411052BAD860C00F78991 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5174110B2BAD86C600F78991 /* ClothingEcomHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingEcomHomeView.swift; sourceTree = "<group>"; };
 		5174110F2BAD86FA00F78991 /* ClothingEcomDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingEcomDataModel.swift; sourceTree = "<group>"; };
@@ -69,6 +71,10 @@
 		51E67EE92BA5BDB40083D487 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51E67EEB2BA5BDB50083D487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51E67EEE2BA5BDB50083D487 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A565D27A2BB447F20000C82E /* CategoryProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductView.swift; sourceTree = "<group>"; };
+		A565D27C2BB4533E0000C82E /* NewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogin.swift; sourceTree = "<group>"; };
+		A565D27E2BB464210000C82E /* User2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2.swift; sourceTree = "<group>"; };
+		A565D2802BB464950000C82E /* LoginViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,6 @@
 				51E67EE92BA5BDB40083D487 /* ContentView.swift */,
 				5174110B2BAD86C600F78991 /* ClothingEcomHomeView.swift */,
 				517411132BAD87B700F78991 /* LoginView.swift */,
-				50791A632BB1A0B300EFB351 /* NewLoginView.swift */,
 				5174111B2BADAA4E00F78991 /* CartView.swift */,
 				517411252BADB7D700F78991 /* CartManager.swift */,
 				50791A452BB1341900EFB351 /* ForgotPasswordView.swift */,
@@ -98,6 +103,8 @@
 				50791A572BB179BC00EFB351 /* ProductsByCategoryView.swift */,
 				50791A5D2BB1899900EFB351 /* CategoryButtonView.swift */,
 				50791A5F2BB19CF500EFB351 /* FilteredProductsView.swift */,
+				A565D27A2BB447F20000C82E /* CategoryProductView.swift */,
+				A565D27C2BB4533E0000C82E /* NewLogin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 				517411212BADB59D00F78991 /* Product.swift */,
 				517411112BAD873B00F78991 /* ClothingEcomViewModel.swift */,
 				50791A4B2BB134C500EFB351 /* User.swift */,
+				A565D27E2BB464210000C82E /* User2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 				50791A552BB171D300EFB351 /* TabViewModel.swift */,
 				50791A592BB179D500EFB351 /* ProductsByCategoryViewModel.swift */,
 				50791A612BB19D6C00EFB351 /* ProductListViewModel.swift */,
+				A565D2802BB464950000C82E /* LoginViewModel2.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,18 +245,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A565D27D2BB4533E0000C82E /* NewLogin.swift in Sources */,
+				A565D2812BB464950000C82E /* LoginViewModel2.swift in Sources */,
 				5174110C2BAD86C600F78991 /* ClothingEcomHomeView.swift in Sources */,
 				50791A482BB1343C00EFB351 /* SignUpView.swift in Sources */,
 				50791A4A2BB134B100EFB351 /* SignUpViewModel.swift in Sources */,
 				517411262BADB7D700F78991 /* CartManager.swift in Sources */,
 				517411142BAD87B800F78991 /* LoginView.swift in Sources */,
 				50791A522BB1588500EFB351 /* ProductViewModel.swift in Sources */,
+				A565D27F2BB464210000C82E /* User2.swift in Sources */,
+				A565D27B2BB447F20000C82E /* CategoryProductView.swift in Sources */,
 				517411062BAD860C00F78991 /* LoginViewModel.swift in Sources */,
 				517411202BADB24300F78991 /* ProductCard.swift in Sources */,
 				50791A4C2BB134C500EFB351 /* User.swift in Sources */,
 				517411102BAD86FA00F78991 /* ClothingEcomDataModel.swift in Sources */,
 				50791A542BB171C400EFB351 /* TabView.swift in Sources */,
-				50791A642BB1A0B300EFB351 /* NewLoginView.swift in Sources */,
 				50791A5A2BB179D500EFB351 /* ProductsByCategoryViewModel.swift in Sources */,
 				517411222BADB59D00F78991 /* Product.swift in Sources */,
 				517411122BAD873B00F78991 /* ClothingEcomViewModel.swift in Sources */,
