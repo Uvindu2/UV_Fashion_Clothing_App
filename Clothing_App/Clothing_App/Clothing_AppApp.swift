@@ -5,13 +5,17 @@
 //  Created by NIBM-LAB04-PC05 on 2024-03-16.
 //
 
+
 import SwiftUI
 
 @main
-struct Clothing_AppApp: App {
+struct YourApp: App {
+    @StateObject var viewModel = ProductViewModel()
+    
     var body: some Scene {
         WindowGroup {
-           RegistrationForm()
+            ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
