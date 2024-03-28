@@ -39,6 +39,7 @@
 		A565D27D2BB4533E0000C82E /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D27C2BB4533E0000C82E /* NewLogin.swift */; };
 		A565D27F2BB464210000C82E /* User2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D27E2BB464210000C82E /* User2.swift */; };
 		A565D2812BB464950000C82E /* LoginViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565D2802BB464950000C82E /* LoginViewModel2.swift */; };
+		A5A835C22BB57483004E0078 /* SignUpNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A835C12BB57483004E0078 /* SignUpNew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		A565D27C2BB4533E0000C82E /* NewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogin.swift; sourceTree = "<group>"; };
 		A565D27E2BB464210000C82E /* User2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2.swift; sourceTree = "<group>"; };
 		A565D2802BB464950000C82E /* LoginViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel2.swift; sourceTree = "<group>"; };
+		A5A835C12BB57483004E0078 /* SignUpNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				50791A5F2BB19CF500EFB351 /* FilteredProductsView.swift */,
 				A565D27A2BB447F20000C82E /* CategoryProductView.swift */,
 				A565D27C2BB4533E0000C82E /* NewLogin.swift */,
+				A5A835C12BB57483004E0078 /* SignUpNew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				50791A502BB1556900EFB351 /* ProductOneDetailView.swift in Sources */,
 				5174111C2BADAA4E00F78991 /* CartView.swift in Sources */,
 				50791A582BB179BC00EFB351 /* ProductsByCategoryView.swift in Sources */,
+				A5A835C22BB57483004E0078 /* SignUpNew.swift in Sources */,
 				50791A562BB171D300EFB351 /* TabViewModel.swift in Sources */,
 				51E67EE82BA5BDB40083D487 /* Clothing_AppApp.swift in Sources */,
 			);

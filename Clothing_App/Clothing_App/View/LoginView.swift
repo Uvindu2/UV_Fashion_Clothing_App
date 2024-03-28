@@ -169,6 +169,7 @@ struct LoginView: View {
                     if viewModel.login(user: User2(username: viewModel.username, password: viewModel.password)) {
                         // Navigate to home page upon successful login
                         // For demo, just show alert
+                        showAlert=false
                         isLoggedIn = true
                    
                     } else {
@@ -200,7 +201,7 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct LoginView_Previews2: PreviewProvider {
     static var previews: some View {
         LoginView(viewModel: LoginViewModel2())
     }

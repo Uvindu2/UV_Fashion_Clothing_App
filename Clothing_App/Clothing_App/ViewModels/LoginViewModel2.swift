@@ -15,7 +15,7 @@ class LoginViewModel2: ObservableObject {
     func login(user: User2) -> Bool {
         // Perform authentication logic here
         // For demonstration, let's assume successful login if username and password match
-        return user.username == username && user.password == password
+        return user.username == "Uvindu" && user.password == "123"
     }
 }
 
