@@ -7,27 +7,33 @@
 
 import Foundation
 
-struct Product: Identifiable, Decodable { // Ensure Product conforms to Decodable
+struct Product: Identifiable, Decodable {
+   
     var id = UUID()
     var name: String
     var image: String
     var price: Int
-    var description:String
-    var category:String
+    var description: String
+    var category: String
+    
+    enum CodingKeys: String, CodingKey {
+        case name, image, price, description, category
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.image = try container.decode(String.self, forKey: .image)
+        self.price = try container.decode(Int.self, forKey: .price)
+        self.description = try container.decode(String.self, forKey: .description)
+        self.category = try container.decode(String.self, forKey: .category)
+    }
 }
 
 // Other parts of your code remain the same
+let viewModel=ProductViewModel()
+let productList=viewModel.productList;
 
 
-let productList = [
-    Product(name: "Orange sweater", image: "dress1", price: 54, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Men"),
-    Product(name: "Red wine sweater", image: "dress2", price: 89, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Women"),
-    Product(name: "Sand sweater", image: "dress3", price: 79, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Men"),
-    Product(name: "Sea sweater", image: "dress4", price: 94, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Women"),
-    Product(name: "Cream sweater", image: "dress5", price: 99, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Kids"),
-    Product(name: "Beige sweater", image: "dress6", price: 65, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Kids"),
-    Product(name: "Grey sweater", image: "dress7", price: 54, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Kids"),
-    Product(name: "Mink sweater", image: "dress1", price: 83, description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", category: "Office")
-]
 
 

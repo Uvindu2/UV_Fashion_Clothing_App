@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var cartManager = CartManager()
+    @StateObject var viewModel = ProductViewModel()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     let categories: [Category] = [
@@ -58,10 +59,12 @@ struct ContentView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(productList, id: \.id) { product in
+                        ForEach(viewModel.productList.filter { $0.id != nil }, id: \.id) { product in
                             ProductCard(product: product)
                                 .environmentObject(cartManager)
                         }
+
+
                     }
                 }
                 .padding()
@@ -76,15 +79,19 @@ struct ContentView: View {
             }
          
         }
+
         .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+                        viewModel.fetchProductsFromAPI()
+                    }
     }
     
     // Function to filter products for the selected category
     private func filteredProducts(for category: Category?) -> [Product] {
         guard let category = category else {
-            return productList // If no category selected, return all products
+            return viewModel.productList // If no category selected, return all products
         }
-        return productList.filter { $0.category == category.name }
+        return viewModel.productList.filter { $0.category == category.name }
     }
 }
 

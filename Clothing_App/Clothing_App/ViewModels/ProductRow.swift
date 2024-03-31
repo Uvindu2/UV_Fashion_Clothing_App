@@ -41,7 +41,8 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: productList[2])
+        let viewModel = ProductViewModel()
+        ProductRow(product: viewModel.productList[2])
             .environmentObject(CartManager())
     }
 }
