@@ -43,7 +43,6 @@ struct ProductOneDetailView: View {
             Spacer()
             Text("Add to Cart")
                 .padding()
-
                 .frame(maxWidth: .infinity)
                 .background(Color.green)
                 .foregroundColor(.white)
