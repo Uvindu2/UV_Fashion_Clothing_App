@@ -8,15 +8,19 @@ struct ProductOneDetailView: View {
             // Product Image
             Image(product.image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 400, height: 220) // Set the desired width and height
                 .padding()
-            
+            Spacer()
+
+                .padding(.bottom,40)
             // Product Name
             Text(product.name)
                 .font(.title3)
+                .foregroundColor(.white)
             
             // Product Price
-            Text("\(product.price)$")
+            Text("Rs. \(product.price)")
                 .font(.title3)
                 .padding()
             

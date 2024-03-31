@@ -75,7 +75,7 @@ struct ProductCard: View {
                         Text(product.name)
                             .bold()
                         
-                        Text("\(product.price)$")
+                        Text("Rs.\(product.price)")
                             .font(.caption)
                     }
                     .padding()

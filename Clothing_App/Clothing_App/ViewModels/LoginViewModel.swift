@@ -12,6 +12,7 @@ class LoginViewModel: ObservableObject {
     @Published var password: String = ""
     
     func login() -> Bool {
+        print(username)
         // Implement your login logic here
         // For demonstration purposes, let's just check if username and password are not empty
         return !username.isEmpty && !password.isEmpty

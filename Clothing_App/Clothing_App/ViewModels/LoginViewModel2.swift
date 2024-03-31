@@ -17,5 +17,11 @@ class LoginViewModel2: ObservableObject {
         // For demonstration, let's assume successful login if username and password match
         return user.username == "Uvindu" && user.password == "123"
     }
+    
+    func signUp(){
+        // Perform authentication logic here
+        // For demonstration, let's assume successful login if username and password match
+        print("Registering user with username: \(username) and password: \(password)")
+    }
 }
 

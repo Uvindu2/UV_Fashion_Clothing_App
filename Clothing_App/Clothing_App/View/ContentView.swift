@@ -17,6 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
+
             VStack(alignment: .leading) {
                 Text("UV Fashion")
                     .foregroundStyle(Color.black)
@@ -76,15 +77,20 @@ struct ContentView: View {
                         }
                     )
                 }
+                
+                
             }
          
         }
 
-        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
                         viewModel.fetchProductsFromAPI()
                     }
+        .navigationViewStyle(StackNavigationViewStyle())
+ 
     }
+    
+    
     
     // Function to filter products for the selected category
     private func filteredProducts(for category: Category?) -> [Product] {
@@ -94,8 +100,6 @@ struct ContentView: View {
         return viewModel.productList.filter { $0.category == category.name }
     }
 }
-
-
 
 struct Category: Hashable {
     let name: String

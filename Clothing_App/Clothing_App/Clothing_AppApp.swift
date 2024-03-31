@@ -14,9 +14,7 @@ struct YourApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            // Inject LoginViewModel into LoginView
+            ContentView() // Inject LoginViewModel into LoginView
         }
-        
     }
 }

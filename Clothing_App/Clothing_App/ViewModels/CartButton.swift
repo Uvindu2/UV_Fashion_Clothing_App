@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CartButton:View{
     var numberOfProducts:Int
+    @StateObject var viewModel = LoginViewModel2()
     var body:some View{
+
         ZStack(alignment: .topTrailing){
             Image(systemName: "cart")
                 .padding(.top,5)
@@ -21,6 +23,7 @@ struct CartButton:View{
                     .cornerRadius(50)
             }
         }
+
     }
 }
 

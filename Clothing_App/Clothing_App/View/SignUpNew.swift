@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SignUpNew: View {
-    @State private var email: String = ""
+    @State private var username: String = ""
     @State private var npassword: String = ""
+    @State private var confirmPassword: String = ""
     @State var maxCircleHeight:CGFloat=0
     @StateObject var viewModel = LoginViewModel2() 
     var body: some View {
@@ -60,7 +61,7 @@ struct SignUpNew: View {
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
                     
-                    TextField("Email address",text: $email)
+                    TextField("Email address",text: $username)
                         .font(.system(size: 20,weight: .semibold))
                         .foregroundColor(.gray)
                         .padding(.top,4)
@@ -73,7 +74,7 @@ struct SignUpNew: View {
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
                     
-                    TextField("Enter password",text: $email)
+                    TextField("Enter password",text: $npassword)
                         .font(.system(size: 20,weight: .semibold))
                         .foregroundColor(.gray)
                         .padding(.top,4)
@@ -87,7 +88,7 @@ struct SignUpNew: View {
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
                     
-                    SecureField("Enter confirm password",text: $npassword)
+                    SecureField("Enter confirm password",text: $confirmPassword)
                         .font(.system(size: 20,weight: .semibold))
                         .foregroundColor(.black)
                         .padding(.top,5)
@@ -96,7 +97,10 @@ struct SignUpNew: View {
                 })
                 .padding(.top,20)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    viewModel.signUp();
+                   
+                }, label: {
                     Image(systemName: "arrow.right")
                         .font(.system(size: 24,weight: .bold))
                         .foregroundColor(.white)
