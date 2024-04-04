@@ -12,7 +12,7 @@ struct NewLogin: View {
     @State private var npassword: String = ""
     @State var maxCircleHeight:CGFloat=0
     
-    @ObservedObject var viewModel: LoginViewModel2
+    @ObservedObject var viewModel: LoginViewModel
     @State private var showAlert = false // State variable to control alert
     @State private var isLoggedIn = false
     var body: some View {
@@ -95,7 +95,7 @@ struct NewLogin: View {
                     .frame(maxWidth: .infinity,alignment: .trailing)
                     .padding(.top,10)
                     Button(action: {
-                        if viewModel.login(user: User2(username: viewModel.username, password: viewModel.password)) {
+                        if viewModel.login(user: User(username: viewModel.username, password: viewModel.password)) {
                             // Navigate to home page upon successful login
                             // For demo, just show alert
                             showAlert=false
@@ -195,6 +195,6 @@ extension View{
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        NewLogin(viewModel: LoginViewModel2())
+        NewLogin(viewModel: LoginViewModel())
     }
 }

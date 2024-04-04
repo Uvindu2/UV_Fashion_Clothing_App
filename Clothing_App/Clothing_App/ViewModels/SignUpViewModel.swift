@@ -7,7 +7,7 @@
 
 import Foundation
 class RegistrationViewModel: ObservableObject {
-    @Published var user: User = User(username: "",firstName: "",lastName: "", email: "", password: "",address: "",mobile: "",nPassword: "",confirmPassword: "")
+    @Published var user: User = User(username: "",password: "")
     @Published var registrationSuccess = false
     
     func register() {
