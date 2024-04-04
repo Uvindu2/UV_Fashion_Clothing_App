@@ -40,14 +40,24 @@ struct CartView: View {
                         .bold()
 
                 }
-
-                .padding()
-
+                //PaymentButton(action:{})
+Spacer()
+                Button(action: {
+                               // Action when button is tapped
+                           }) {
+                               Text("Pay")
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.blue)
+                                   .foregroundColor(.white)
+                                   .cornerRadius(8)
+                                   .font(.system(size: 24, weight: .bold))
+                               
+                           }
+                           .padding()
                 
 
-                //PaymentButton(action:{})
-
-                    .padding()
+             
 
             }else{
 

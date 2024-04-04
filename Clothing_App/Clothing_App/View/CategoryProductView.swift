@@ -14,7 +14,7 @@ struct CategoryProductsView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 20)], spacing: 20) {
-                ForEach(products, id: \.id) { product in
+                ForEach(products.filter { $0.id != nil }, id: \.id) { product in
                     ProductCard(product: product)
                         .environmentObject(cartManager)
                 }

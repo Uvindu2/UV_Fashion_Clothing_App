@@ -6,3 +6,12 @@
 //
 
 import Foundation
+class TabViewModel: ObservableObject {
+    // Data properties
+    @Published var selectedTab: Int = 0
+    
+    // Functions to handle user interactions
+    func selectTab(_ tab: Int) {
+        selectedTab = tab
+    }
+}
