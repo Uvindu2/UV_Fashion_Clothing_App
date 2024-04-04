@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CartButton:View{
     var numberOfProducts:Int
-    @StateObject var viewModel = LoginViewModel2()
+    @StateObject var viewModel = LoginViewModel()
     var body:some View{
 
         ZStack(alignment: .topTrailing){

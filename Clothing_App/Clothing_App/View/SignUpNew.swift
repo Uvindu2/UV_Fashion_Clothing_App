@@ -12,7 +12,7 @@ struct SignUpNew: View {
     @State private var npassword: String = ""
     @State private var confirmPassword: String = ""
     @State var maxCircleHeight:CGFloat=0
-    @StateObject var viewModel = LoginViewModel2() 
+    @StateObject var viewModel = LoginViewModel() 
     var body: some View {
         VStack{
             GeometryReader { proxy in

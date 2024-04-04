@@ -8,11 +8,11 @@
 import Foundation
 import Combine
 
-class LoginViewModel2: ObservableObject {
+class LoginViewModel: ObservableObject {
     @Published var username: String = ""
     @Published var password: String = ""
     
-    func login(user: User2) -> Bool {
+    func login(user: User) -> Bool {
         // Perform authentication logic here
         // For demonstration, let's assume successful login if username and password match
         return user.username == "Uvindu" && user.password == "123"
