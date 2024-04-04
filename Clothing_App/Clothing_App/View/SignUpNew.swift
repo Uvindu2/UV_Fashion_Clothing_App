@@ -98,7 +98,7 @@ struct SignUpNew: View {
                 .padding(.top,20)
                 
                 Button(action: {
-                    viewModel.signUp();
+                    viewModel.signUp(username: username, password: npassword)
                    
                 }, label: {
                     Image(systemName: "arrow.right")
