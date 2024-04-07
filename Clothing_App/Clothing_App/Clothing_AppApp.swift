@@ -14,7 +14,7 @@ struct YourApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SignUpNew() // Inject LoginViewModel into LoginView
+            NewLogin(viewModel: viewModel) // Inject LoginViewModel into LoginView
         }
     }
 }

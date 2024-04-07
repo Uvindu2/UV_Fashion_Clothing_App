@@ -5,6 +5,7 @@ struct ContentView: View {
     @StateObject var viewModel = ProductViewModel()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
+    
     let categories: [Category] = [
         Category(name: "Men", systemImageName: "person"),
         Category(name: "Women", systemImageName: "person.fill"),
@@ -16,6 +17,7 @@ struct ContentView: View {
     @State private var selectedCategory: Category? = nil
     
     var body: some View {
+        
         NavigationView {
 
             VStack(alignment: .leading) {
@@ -82,11 +84,13 @@ struct ContentView: View {
             }
          
         }
-
+        
         .onAppear {
-                        viewModel.fetchProductsFromAPI()
-                    }
+            viewModel.fetchProductsFromAPI()
+            cartManager.fetchCartDetails(for: "66067dfa3fc5b5976ea87917")
+        }
         .navigationViewStyle(StackNavigationViewStyle())
+
  
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EE4745D2BC2C9A3002EF07A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4745C2BC2C9A3002EF07A /* SessionManager.swift */; };
 		50791A462BB1341900EFB351 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A452BB1341900EFB351 /* ForgotPasswordView.swift */; };
 		50791A4A2BB134B100EFB351 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A492BB134B100EFB351 /* SignUpViewModel.swift */; };
 		50791A502BB1556900EFB351 /* ProductOneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791A4F2BB1556900EFB351 /* ProductOneDetailView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EE4745C2BC2C9A3002EF07A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		50791A452BB1341900EFB351 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		50791A492BB134B100EFB351 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		50791A4F2BB1556900EFB351 /* ProductOneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOneDetailView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				50791A552BB171D300EFB351 /* TabViewModel.swift */,
 				50791A612BB19D6C00EFB351 /* ProductListViewModel.swift */,
 				A565D2802BB464950000C82E /* LoginViewModel2.swift */,
+				0EE4745C2BC2C9A3002EF07A /* SessionManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				A5A835C22BB57483004E0078 /* SignUpNew.swift in Sources */,
 				50791A562BB171D300EFB351 /* TabViewModel.swift in Sources */,
 				51E67EE82BA5BDB40083D487 /* Clothing_AppApp.swift in Sources */,
+				0EE4745D2BC2C9A3002EF07A /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
